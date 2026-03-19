@@ -125,7 +125,34 @@ export const DATA = {
   ],
 
   projects: [
-  {
+    {
+      title: "Goodman - Agentic Privacy Operations Platform",
+      href: "https://www.heisenbug.ai/",
+      dates: "December 2025 - Present",
+      active: true,
+      description:
+        "Heisenbug's flagship product. An agentic privacy operations platform that continuously monitors, enforces, and responds to data protection obligations across an organization's entire data infrastructure — built ground-up for India's DPDP Act with agentic AI at the core.",
+      technologies: [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Docker",
+        "Agentic AI",
+        "DPDP Compliance",
+        "Next.js",
+        "TypeScript",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.heisenbug.ai/",
+          icon: <Icons.globe className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/goodman.png",
+      video: "",
+    },
+    {
       title: "Advanced NS-Net",
       href: "https://github.com/shiwani42/Advanced-NSNet", // ← replace with your actual repo URL
       dates: "2025",
@@ -139,11 +166,101 @@ export const DATA = {
         "Diffusion Models",
         "GAN Detection",
       ],
-      links: [],
-      image: "/nsnet-architecture.png", // ← drop your architecture diagram here, or leave ""
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/Advanced-NSNet",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/nsnet-architecture.png", // ← drop your architecture diagram here, or leave ""
       video: "",
     },
-
+    {
+      title: "Broke-O-Meter: Zero Knowledge Proof of Poverty",
+      href: "https://broke.heisenbug.ai",
+      dates: "2025 - Present",
+      active: true,
+      description:
+        "Built a fully client side system to prove a user's bank balance is below a chosen threshold without revealing the actual value. Designed a cryptographic proof flow using a simulated Pedersen commitment and Fiat Shamir transformation with SHA 256 via the Web Crypto API.\n\nIntegrated Tesseract.js for in browser OCR and created a portable proof format that encodes commitments, challenges, and validity checks without exposing the balance. Implemented independent verification and currency normalization, keeping the system entirely serverless.",
+      technologies: [
+        "JavaScript",
+        "Web Crypto API",
+        "SHA-256",
+        "Tesseract.js",
+        "Zero Knowledge Proofs",
+        "Cryptography",
+        "OCR",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://broke.heisenbug.ai",
+          icon: <Icons.globe className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/broke_o_meter.gif",
+      video: "",
+    },
+    {
+      title: "Ground Penetrating Radar - SFCW & FMCW Dual Approach",
+      href: "https://github.com/shiwani42/sfcw_ground_penetrating_radar",
+      dates: "2025",
+      active: false,
+      description:
+        "Built a dual-track ground penetrating radar system capable of scanning along a spatial axis and generating radargrams to detect subsurface objects. Part A implemented SFCW technique from scratch using an STM32 Nucleo F103, MCP4725 DAC, VCO, LNA, bias tee, and custom Vivaldi antipodal antennas, with an RF mixer extracting phase-shift data and FFT-based depth reconstruction visualized on an LCD.\n\nPart B leveraged an IVS-362 24 GHz FMCW radar module with I/Q output, DC offset correction via an op-amp subtractor, and SAR-based time-domain signal processing in MATLAB to produce hyperbolic radargrams. A rack-and-pinion stepper motor system achieved 1.5 cm spatial resolution over a 30 cm scan range.",
+      technologies: [
+        "STM32",
+        "RF Signal Processing",
+        "FFT",
+        "SAR",
+        "MATLAB",
+        "Python",
+        "PCB Design",
+        "Vivaldi Antenna",
+        "SPI / I2C",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/sfcw_ground_penetrating_radar",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/gpr.gif",
+      video: "",
+    },
+    {
+      title: "Pipelined Median & Binary Thresholding on MAX-10 FPGA",
+      href: "https://github.com/shiwani42/pipelined_median_thresholding_max10_fpga",
+      dates: "2024",
+      active: false,
+      description:
+        "Implemented a fully pipelined image filtering system on the MAX-10 FPGA (Xen-10 board) for underwater gas pipeline detection. Designed a 7-stage hardware pipeline in VHDL processing 128x128 grayscale images stored in dual-port BRAM, using a DEMUX, four intermediate line buffers, MUXes, and a custom encoder to assemble 3x3 pixel kernels each clock cycle.\n\nThe median filter applies a bubble sort over 9 pixels per cycle, followed by binary thresholding at value 140 to isolate pipeline structures. Verified the full datapath against MATLAB-simulated results and validated the design using ModelSim-Altera.",
+      technologies: [
+        "VHDL",
+        "Verilog",
+        "MAX-10 FPGA",
+        "Altera Quartus",
+        "ModelSim",
+        "BRAM",
+        "Pipelined Architecture",
+        "Median Filter",
+        "Binary Thresholding",
+        "MATLAB",
+        "Digital Design",
+        "Image Processing"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/pipelined_median_thresholding_max10_fpga",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/binary_thresholding.png",
+      video: "",
+    },
     {
       title: "Digital Signature Algorithm Hardware Core",
       href: "#",
@@ -158,7 +275,7 @@ export const DATA = {
         "Hardware Security",
       ],
       links: [],
-      image: "/dsa.png",
+      image: "/project/dsa.png",
       video: "",
     },
     {
@@ -174,7 +291,33 @@ export const DATA = {
         "Digital Design",
       ],
       links: [],
-      image: "/pipelined_risc_cpu.png",
+      image: "/project/pipelined_risc_cpu.png",
+      video: "",
+    },
+    {
+      title: "Wireshark Privacy-Preserving Threat Detection Plugin",
+      href: "https://github.com/saurabh4269/fdc_plugin",
+      dates: "May 2024 - July 2024",
+      active: false,
+      description:
+        "Developed a Wireshark Lua plugin integrating ML-based threat detection to analyze encrypted network traffic. Used Naive Bayes classifiers with network protocol fingerprinting. Co-authored a whitepaper selected from 131 teams at IITB Trust Lab's FOSSx program.",
+      technologies: [
+        "Lua",
+        "Python",
+        "Wireshark",
+        "Naive Bayes",
+        "CMake",
+        "Mercury",
+        "Cybersecurity",
+      ],
+      links: [
+        {
+          type: "Drive",
+          href: "https://drive.google.com/drive/folders/1-YYDsH1iOsmtf3EUxBonaDoeZG4W8rpb",
+          icon: <Icons.googleDrive className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/wireshark.gif",
       video: "",
     },
   ],
