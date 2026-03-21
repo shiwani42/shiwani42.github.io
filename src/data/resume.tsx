@@ -231,6 +231,83 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Threshold Voltage Modeling of p-AlGaN HEMTs",
+      href: "https://github.com/shiwani42/pAlGaN-HEMT-Vth-Model",
+      dates: "November 2025",
+      active: false,
+      description:
+        "Replicated and validated the Bakeroot (2018) analytical model for threshold voltage in p-AlGaN gate HEMTs using physics-based equations from Ambacher (1999) for bandgap, polarization, and dielectric properties.\n\nDecomposed the closed-form VT expression into four physical terms: energy, acceptor charge, channel depletion, and net polarization. Extended the model with a Gaussian Monte Carlo framework (2000-5000 samples) to simulate fabrication variations in barrier composition, thickness, and doping, quantifying their impact on VT distribution and device yield.",
+      technologies: [
+        "Python",
+        "GaN HEMT",
+        "Monte Carlo Simulation",
+        "Semiconductor Physics",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/pAlGaN-HEMT-Vth-Model",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/hemt.png",
+      video: "",
+    },
+    {
+      title: "2T Embedded DRAM using Amorphous Oxide Semiconductors",
+      href: "https://github.com/shiwani42/ito-fet-2t-edram",
+      dates: "Aug 2025 - Nov 2025",
+      active: false,
+      description:
+        "Explored the design of a BEOL-compatible, fully transparent 2T embedded DRAM cell using ITO thin-film transistors at the IIT Bombay Nanofabrication Facility under Prof. Veeresh Deshpande.\n\nWorked on device simulations, material stack evaluation, and fabrication process iterations to study retention behavior and switching characteristics. Collaborated with PhD researchers on bias stress characterization, contributing to a conference paper demonstrating 1.5x improved BTI immunity through channel encapsulation and annealing optimization.",
+      technologies: [
+        "ITO FET",
+        "Amorphous Oxide Semiconductors",
+        "PEALD",
+        "Semiconductor Device Fabrication",
+        "Bias Temperature Instability",
+        "Channel Encapsulation",
+        "Keysight B1500A",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/ito-fet-2t-edram",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/ito-fet.jpeg",
+      video: "",
+    },
+    
+    {
+      title: "Diamond Nanopillar Arrays for Quantum Biosensing",
+      href: "https://github.com/shiwani42/diamond-nanopillar-biosensing",
+      dates: "Aug 2025 - Nov 2025",
+      active: true,
+      description:
+        "Fabricating and characterizing diamond nanopillar arrays with embedded nitrogen-vacancy (NV) centers for quantum biosensing of mammalian neuronal signals.\n\nNanopillars (500 nm wide, 1.3 µm tall) are patterned via e-beam lithography and etched using ICP-RIE, serving as both optical waveguides to enhance NV sensitivity and biomechanical scaffolds to position neurons near the sensing volume. Characterization pipeline includes XPS, XRD, Raman spectroscopy, confocal microscopy, and ODMR.",
+      technologies: [
+        "E-Beam Lithography",
+        "ICP-RIE",
+        "NV Centers",
+        "Confocal Microscopy",
+        "ODMR",
+        "XPS",
+        "Raman Spectroscopy",
+        "Quantum Sensing",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/diamond-nanopillar-biosensing",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/neuron.jpeg",
+      video: "",
+    },
+    {
       title: "Pipelined Median & Binary Thresholding on MAX-10 FPGA",
       href: "https://github.com/shiwani42/pipelined_median_thresholding_max10_fpga",
       dates: "2024",
@@ -290,7 +367,13 @@ export const DATA = {
         "Computer Architecture",
         "Digital Design",
       ],
-      links: [],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/iitb-risc23-pipeline",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+      ],
       image: "/project/pipelined_risc_cpu.png",
       video: "",
     },
