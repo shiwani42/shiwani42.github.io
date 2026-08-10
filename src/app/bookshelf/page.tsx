@@ -33,13 +33,10 @@ export default function BookshelfPage() {
       <BlurFade delay={BLUR_FADE_DELAY}>
         <div className="flex min-h-0 flex-col gap-y-2">
           <h1 className="text-3xl font-semibold tracking-tighter sm:text-4xl">
-            Bookshelf{" "}
-            <span className="ml-1 bg-card border border-border rounded-md px-2 py-1 text-muted-foreground text-sm align-middle">
-              {books.length} books
-            </span>
+            Bookshelf
           </h1>
           <p className="text-muted-foreground">
-            Books I have read. Click any cover to open my notes.
+            Books I have read and my reflections
           </p>
         </div>
       </BlurFade>
