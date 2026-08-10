@@ -94,8 +94,8 @@ export const DATA = {
       location: "Remote",
       title: "Open Source Developer",
       logoUrl: "/opencre.png",
-      start: "Apr 2026",
-      end: "Jun 2026",
+      start: "Mar 2026",
+      end: "Present",
       description:
         "Contributed to OWASP OpenCRE, an open mapping platform for security standards and controls. Merged fixes for a text-search crash when the query parameter is missing, corrected a database node test expectation, and centralized the CRE_ALLOW_IMPORT feature flag so config and gate behavior stay consistent across the API and frontend.",
     },
