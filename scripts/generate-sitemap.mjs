@@ -34,7 +34,7 @@ async function generateSitemap() {
   const staticRoutes = [
     { url: "/", priority: "1.0", changefreq: "weekly", lastmod: today },
     { url: "/blog", priority: "0.8", changefreq: "daily", lastmod: today },
-    { url: "/bookshelf", priority: "0.6", changefreq: "monthly", lastmod: today },
+    { url: "/bookshelf", priority: "0.8", changefreq: "weekly", lastmod: today },
   ];
 
   /** Blog post routes (from content/*.mdx) */
@@ -61,7 +61,23 @@ async function generateSitemap() {
     console.warn("No content directory found, skipping blog routes.");
   }
 
-  const allRoutes = [...staticRoutes, ...blogRoutes];
+  /** Book note routes (from content/books/*.mdx) */
+  const booksDir = path.join(root, "content", "books");
+  let bookRoutes = [];
+  try {
+    const files = await readdir(booksDir);
+    const mdxFiles = files.filter((f) => f.endsWith(".mdx"));
+    bookRoutes = mdxFiles.map((file) => ({
+      url: `/bookshelf/${file.replace(/\.mdx$/, "")}`,
+      priority: "0.6",
+      changefreq: "monthly",
+      lastmod: today,
+    }));
+  } catch {
+    console.warn("No books directory found, skipping book routes.");
+  }
+
+  const allRoutes = [...staticRoutes, ...blogRoutes, ...bookRoutes];
 
   const urlEntries = allRoutes
     .map(
