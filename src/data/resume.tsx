@@ -88,6 +88,18 @@ export const DATA = {
         "Research intern at the Laboratory of Photonics and Quantum Measurements (LPQM) under Prof. Tobias J. Kippenberg, mentored by Xinru Ji. Designed, simulated, and laid out chirped-Bragg-grating Fabry-Perot microresonators in silicon nitride for dissipative Kerr soliton generation, with symmetric and asymmetric drop-port geometries validated through Lugiato-Lefever soliton dynamics and prepared on a fabrication mask.\n\nImplemented and validated a roughness-limited scattering-loss model for Si3N4 waveguides against a published high-confinement photonic platform, then extended the analysis toward 1 um operation. Contributed three technical notes (PowerPoint vectorized search, KLab GDS library, Lumerical LSF scripting) and built three internal tools still in use by the group: a semantic search interface for the lab slide archive, a searchable technical-notes catalog, and a browser front end for the fabrication design-file share.",
     },
     {
+      company: "OWASP OpenCRE",
+      href: "https://www.opencre.org/",
+      badges: ["Open Source"],
+      location: "Remote",
+      title: "Open Source Developer",
+      logoUrl: "/opencre.png",
+      start: "Apr 2026",
+      end: "Jun 2026",
+      description:
+        "Contributed to OWASP OpenCRE, an open mapping platform for security standards and controls. Merged fixes for a text-search crash when the query parameter is missing, corrected a database node test expectation, and centralized the CRE_ALLOW_IMPORT feature flag so config and gate behavior stay consistent across the API and frontend.",
+    },
+    {
       company: "IITBNF",
       href: "https://www.iitbnf.iitb.ac.in/",
       badges: ["Research"],
@@ -191,7 +203,7 @@ export const DATA = {
           icon: <Icons.linkedin className="h-4 w-4" />,
         },
       ],
-      image: "",
+      image: "/project/dependency-aging-advisor.png",
       video: "",
     },
     {
@@ -228,7 +240,7 @@ export const DATA = {
           icon: <Icons.youtube className="h-4 w-4" />,
         },
       ],
-      image: "",
+      image: "/project/verity.gif",
       video: "",
     },
     {
@@ -253,7 +265,7 @@ export const DATA = {
           icon: <Icons.github className="h-4 w-4" />,
         },
       ],
-      image: "",
+      image: "/project/toto.png",
       video: "",
     },
     {
@@ -282,7 +294,7 @@ export const DATA = {
           icon: <Icons.youtube className="h-4 w-4" />,
         },
       ],
-      image: "",
+      image: "/project/matrix.gif",
       video: "",
     },
     {
@@ -307,36 +319,7 @@ export const DATA = {
           icon: <Icons.github className="h-4 w-4" />,
         },
       ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "OWASP OpenCRE Contributions",
-      href: "https://github.com/OWASP/OpenCRE",
-      dates: "2026",
-      active: false,
-      description:
-        "Open-source contributions to OWASP OpenCRE, a mapping platform for security standards and controls. Merged fixes for a text-search crash when the query parameter is missing, corrected a database node test expectation, and centralized the CRE_ALLOW_IMPORT feature flag so config and gate behavior stay consistent.",
-      technologies: [
-        "Python",
-        "Flask",
-        "Open Source",
-        "OWASP",
-        "Security Standards",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/OWASP/OpenCRE",
-          icon: <Icons.github className="h-4 w-4" />,
-        },
-        {
-          type: "Website",
-          href: "https://opencre.org",
-          icon: <Icons.globe className="h-4 w-4" />,
-        },
-      ],
-      image: "",
+      image: "/project/sidekick.png",
       video: "",
     },
     {
