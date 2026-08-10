@@ -14,10 +14,10 @@ export const DATA = {
   location: "Mumbai, Maharashtra, India",
   locationLink: "https://www.google.com/maps/place/mumbai",
   description:
-    "Co-Founder @Heisenbug | Building agentic compliance solutions | Electrical Engineering @IIT Bombay",
+    "Co-Founder @Heisenbug | Research Intern @EPFL LPQM | Electrical Engineering @IIT Bombay",
   summary:
     "A builder in the making, driven by curiosity and a deep passion for technology and entrepreneurship. I love creating things that matter and connecting with people who share the same hunger to innovate and make an impact.",
-    avatarUrl: "/me.jpg",
+  avatarUrl: "/me.jpg",
   skills: [
     { name: "Python", icon: Python },
     { name: "C/C++", icon: Cplusplus },
@@ -76,6 +76,18 @@ export const DATA = {
         "Heisenbug is a technology company building agentic compliance and security-first systems for a world where data, regulation, and digital workflows are rapidly colliding.Our mission is to help organizations navigate the growing complexity of data privacy, governance, and compliance through trustworthy, continuously adaptive infrastructure.\n\nOur first product, Goodman, is an agentic privacy-operations platform that monitors, enforces, and responds to data-protection obligations across an organization’s entire data stack.",
     },
     {
+      company: "EPFL LPQM",
+      href: "https://www.epfl.ch/labs/k-lab/",
+      badges: ["Research Internship"],
+      location: "Lausanne, Switzerland",
+      title: "Research Intern",
+      logoUrl: "/epfl.png",
+      start: "May 2026",
+      end: "Jul 2026",
+      description:
+        "Research intern at the Laboratory of Photonics and Quantum Measurements (LPQM) under Prof. Tobias J. Kippenberg, mentored by Xinru Ji. Designed, simulated, and laid out chirped-Bragg-grating Fabry-Perot microresonators in silicon nitride for dissipative Kerr soliton generation, with symmetric and asymmetric drop-port geometries validated through Lugiato-Lefever soliton dynamics and prepared on a fabrication mask.\n\nImplemented and validated a roughness-limited scattering-loss model for Si3N4 waveguides against a published high-confinement photonic platform, then extended the analysis toward 1 um operation. Contributed three technical notes (PowerPoint vectorized search, KLab GDS library, Lumerical LSF scripting) and built three internal tools still in use by the group: a semantic search interface for the lab slide archive, a searchable technical-notes catalog, and a browser front end for the fabrication design-file share.",
+    },
+    {
       company: "IITBNF",
       href: "https://www.iitbnf.iitb.ac.in/",
       badges: ["Research"],
@@ -131,7 +143,7 @@ export const DATA = {
       dates: "December 2025 - Present",
       active: true,
       description:
-        "Heisenbug's flagship product. An agentic privacy operations platform that continuously monitors, enforces, and responds to data protection obligations across an organization's entire data infrastructure — built ground-up for India's DPDP Act with agentic AI at the core.",
+        "Heisenbug's flagship product. An agentic privacy operations platform that continuously monitors, enforces, and responds to data protection obligations across an organization's entire data infrastructure, built ground-up for India's DPDP Act with agentic AI at the core.",
       technologies: [
         "Python",
         "FastAPI",
@@ -150,6 +162,181 @@ export const DATA = {
         },
       ],
       image: "/project/goodman.png",
+      video: "",
+    },
+    {
+      title: "Dependency Aging Advisor",
+      href: "https://github.com/shiwani42/dependency-aging-advisor",
+      dates: "2026",
+      active: true,
+      description:
+        "Most dependency scanners report how many packages are outdated without saying which ones matter. Dependency Aging Advisor scans your source to see where each dependency is used, combines that with OSV vulnerability data, and posts a prioritized weekly GitHub issue: what to fix this sprint, what to schedule next, and what is safe to ignore. Runs as a GitHub Action with no external services, supporting npm, PyPI, RubyGems, Go, Rust, Maven, PHP, and NuGet.",
+      technologies: [
+        "Python",
+        "GitHub Actions",
+        "OSV.dev",
+        "ripgrep",
+        "DevSecOps",
+        "Supply Chain Security",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/dependency-aging-advisor",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+        {
+          type: "LinkedIn",
+          href: "https://www.linkedin.com/posts/shiwani-mishra_built-a-tool-ive-been-wanting-for-a-while-activity-7446268445727449088-wiq2",
+          icon: <Icons.linkedin className="h-4 w-4" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Verity - SBOM Validator and Risk Platform",
+      href: "https://verity-thvb.onrender.com/login",
+      dates: "2026",
+      active: true,
+      description:
+        "SBOM validation and risk assessment platform for third-party risk management. Parses CycloneDX and SPDX formats, scores SBOM quality across seven categories, checks compliance against NTIA, BSI, FSCT, and OpenChain profiles, and enriches components with live OSV, CISA KEV, and EPSS data. Includes a React dashboard, CLI for CI pipelines, PDF and JSON export, and workspace analytics.",
+      technologies: [
+        "Python",
+        "React",
+        "CycloneDX",
+        "SPDX",
+        "OSV.dev",
+        "Docker",
+        "TPRM",
+        "SBOM",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://verity-thvb.onrender.com/login",
+          icon: <Icons.globe className="h-4 w-4" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/saurabh4269/verity",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+        {
+          type: "Demo",
+          href: "https://vimeo.com/1195269402",
+          icon: <Icons.youtube className="h-4 w-4" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Toto - In-Store AI Concierge",
+      href: "https://github.com/shiwani42/toto",
+      dates: "2026",
+      active: true,
+      description:
+        "In-store AI concierge for a Swiss outdoor retailer. Shoppers open the app from a QR code, build a product list, navigate store zones, and use a camera AR overlay to highlight matching barcodes on the shelf. Includes trip planning with live weather, price decoding, repair-versus-replace guidance, and real-time multi-shopper sessions. Built as an install-free web app on top of zxing-wasm barcode scanning.",
+      technologies: [
+        "TypeScript",
+        "zxing-wasm",
+        "Web AR",
+        "Supabase",
+        "Claude",
+        "Open-Meteo",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/toto",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Matrix - Interpretable Candidate Ranker",
+      href: "https://github.com/saurabh4269/matrix",
+      dates: "2026",
+      active: false,
+      description:
+        "Candidate ranking system built for the Redrob Intelligent Candidate Discovery hackathon. Ranks 100,000 profiles against a job description using interpretable, JD-derived probes instead of embedding cosine similarity, with trust-weighted signals, confidence labels, pool calibration, and a diversity pass so shortlists are not dominated by one company.",
+      technologies: [
+        "Python",
+        "YAML",
+        "Information Retrieval",
+        "Learning to Rank",
+        "Hackathon",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/saurabh4269/matrix",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+        {
+          type: "Demo",
+          href: "https://vimeo.com/1206506693",
+          icon: <Icons.youtube className="h-4 w-4" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Sidekick - Local-First Accountability App",
+      href: "https://github.com/shiwani42/sidekick_v2",
+      dates: "2026",
+      active: true,
+      description:
+        "Local-first accountability app built around a daily loop: plan tomorrow, close today, and review the long view. Features day, week, and month calendar views with RFC 5545 repeats, offline IndexedDB storage, optional end-to-end encrypted partner sync, and no accounts or analytics for solo use. Built with Preact.",
+      technologies: [
+        "TypeScript",
+        "Preact",
+        "IndexedDB",
+        "PWA",
+        "E2EE",
+        "RFC 5545",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/sidekick_v2",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "OWASP OpenCRE Contributions",
+      href: "https://github.com/OWASP/OpenCRE",
+      dates: "2026",
+      active: false,
+      description:
+        "Open-source contributions to OWASP OpenCRE, a mapping platform for security standards and controls. Merged fixes for a text-search crash when the query parameter is missing, corrected a database node test expectation, and centralized the CRE_ALLOW_IMPORT feature flag so config and gate behavior stay consistent.",
+      technologies: [
+        "Python",
+        "Flask",
+        "Open Source",
+        "OWASP",
+        "Security Standards",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/OWASP/OpenCRE",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+        {
+          type: "Website",
+          href: "https://opencre.org",
+          icon: <Icons.globe className="h-4 w-4" />,
+        },
+      ],
+      image: "",
       video: "",
     },
     {
