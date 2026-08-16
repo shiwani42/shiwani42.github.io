@@ -322,7 +322,7 @@ export const DATA = {
       dates: "2026",
       active: true,
       description:
-        "Local-first accountability app built around a daily loop: plan tomorrow, close today, and review the long view. Features day, week, and month calendar views with RFC 5545 repeats, offline IndexedDB storage, optional end-to-end encrypted partner sync, and no accounts or analytics for solo use. Built with Preact.",
+        "I built Sidekick for my accountability partner and me. Habit apps turn keeping your word into a private streak. Shared calendars dump events and never ask if you actually kept the day. We needed a witness for a small loop: plan tomorrow in half a minute, close today in a minute, and look at the long view when the week is done.\n\nToday answers what I do right now. Close is tap-only and never punitive. The Grid is one cell per week of a life, filled by the days we kept. Partner sync is end-to-end encrypted so the log stays between us. Solo use needs no account and no analytics. We use it.",
       technologies: [
         "TypeScript",
         "Preact",
