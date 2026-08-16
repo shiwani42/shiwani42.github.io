@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
   variable: "--font-mono",
 });
 
-const ogImagePath = withBasePath("/og.png");
+const ogImageUrl = new URL(withBasePath("/og.png"), siteUrl).toString();
 
 const personJsonLd = JSON.stringify({
   "@context": "https://schema.org",
@@ -105,7 +105,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: ogImagePath,
+        url: ogImageUrl,
         width: 1200,
         height: 630,
         alt: DATA.name,
@@ -128,7 +128,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     creator: "@ishiwanimishra",
     site: "@ishiwanimishra",
-    images: [ogImagePath],
+    images: [ogImageUrl],
   },
   verification: {
     google: "",
