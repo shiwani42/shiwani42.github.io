@@ -280,12 +280,22 @@ export const DATA = {
       ],
       links: [
         {
+          type: "Website",
+          href: "https://toto-4xfl.onrender.com/",
+          icon: <Icons.globe className="h-4 w-4" />,
+        },
+        {
           type: "Source",
           href: "https://github.com/shiwani42/toto",
           icon: <Icons.github className="h-4 w-4" />,
         },
+        {
+          type: "Demo",
+          href: "https://vimeo.com/1218662065",
+          icon: <Icons.youtube className="h-4 w-4" />,
+        },
       ],
-      image: "/project/toto.png",
+      image: "/project/toto.gif",
       video: "",
     },
     {

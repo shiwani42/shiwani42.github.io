@@ -6,7 +6,7 @@ import { DATA } from "@/data/resume";
 import { useMemo, useState } from "react";
 
 const BLUR_FADE_DELAY = 0.04;
-const INITIAL_VISIBLE_PROJECTS = 2;
+const INITIAL_VISIBLE_PROJECTS = 4;
 
 export default function ProjectsSection() {
   const [showAll, setShowAll] = useState(false);
