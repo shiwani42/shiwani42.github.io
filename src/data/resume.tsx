@@ -343,6 +343,44 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Chirped-Bragg-Grating Fabry-Perot Microresonators",
+      href: "#",
+      dates: "May 2026 - Jul 2026",
+      active: false,
+      description:
+        "I designed chirped-Bragg-grating Fabry-Perot microresonators in thin silicon nitride for dissipative Kerr soliton generation, during my internship at EPFL LPQM with Xinru Ji. I built a coupled-mode cavity model and a standing-wave Lugiato-Lefever solver with thermal feedback, and I kept second-order dispersion D2 under 10 MHz so a single soliton would form.\n\nI found four symmetric geometries with loaded Q up to 1.03e7 and D2/2pi between 8.0 and 9.1 MHz at 220 to 260 mW on-chip. I also designed an asymmetric drop-port cavity so the soliton has a dedicated output, and confirmed two of those in simulation. I laid the set out on a 7 mm by 12 mm mask with 72 devices, now ready for fabrication.",
+      technologies: [
+        "Silicon Nitride",
+        "Lugiato-Lefever",
+        "Lumerical",
+        "Python",
+        "GDS",
+        "Integrated Photonics",
+      ],
+      links: [],
+      image: "/project/cbg-fp-soliton.png",
+      video: "",
+    },
+    {
+      title: "Roughness-Limited Scattering Loss in Si3N4 Waveguides",
+      href: "#",
+      dates: "May 2026 - Jul 2026",
+      active: false,
+      description:
+        "I implemented a roughness-limited scattering-loss model for Si3N4 waveguides, extending the Payne-Lacey equivalent-current picture with a 2D finite-element mode overlap, and I checked it against the high-confinement platform published by the group.\n\nThe model matches the top and bottom surface contribution within the platform's own bound. The sidewall piece sits a factor of 2.5 to 3.9 below what the measured linewidth needs, and that gap grows with waveguide width. The likely cause is sidewall RMS roughness larger than the reported 0.75 nm, still inside that paper's SEM resolution limit. I then re-evaluated the same model at 1 um for a future platform.",
+      technologies: [
+        "COMSOL",
+        "Finite Element",
+        "Python",
+        "Silicon Nitride",
+        "Waveguide Scattering",
+        "Integrated Photonics",
+      ],
+      links: [],
+      image: "/project/si3n4-scattering-loss.png",
+      video: "",
+    },
+    {
       title: "Advanced NS-Net",
       href: "https://github.com/shiwani42/Advanced-NSNet", // ← replace with your actual repo URL
       dates: "2025",
