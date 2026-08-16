@@ -260,7 +260,7 @@ export const DATA = {
           icon: <Icons.linkedin className="h-4 w-4" />,
         },
       ],
-      image: "/project/dependency-aging-advisor.png",
+      image: "/project/daa-advisory-light.png",
       video: "",
     },
     {
@@ -338,7 +338,7 @@ export const DATA = {
           icon: <Icons.github className="h-4 w-4" />,
         },
       ],
-      image: "/project/sidekick.png",
+      image: "/project/sidekick-today.png",
       video: "",
     },
     {
