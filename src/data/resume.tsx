@@ -197,36 +197,6 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Dependency Aging Advisor",
-      href: "https://github.com/shiwani42/dependency-aging-advisor",
-      dates: "2026",
-      active: true,
-      description:
-        "Most dependency scanners report how many packages are outdated without saying which ones matter. Dependency Aging Advisor scans your source to see where each dependency is used, combines that with OSV vulnerability data, and posts a prioritized weekly GitHub issue: what to fix this sprint, what to schedule next, and what is safe to ignore. Runs as a GitHub Action with no external services, supporting npm, PyPI, RubyGems, Go, Rust, Maven, PHP, and NuGet.",
-      technologies: [
-        "Python",
-        "GitHub Actions",
-        "OSV.dev",
-        "ripgrep",
-        "DevSecOps",
-        "Supply Chain Security",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/shiwani42/dependency-aging-advisor",
-          icon: <Icons.github className="h-4 w-4" />,
-        },
-        {
-          type: "LinkedIn",
-          href: "https://www.linkedin.com/posts/shiwani-mishra_built-a-tool-ive-been-wanting-for-a-while-activity-7446268445727449088-wiq2",
-          icon: <Icons.linkedin className="h-4 w-4" />,
-        },
-      ],
-      image: "/project/dependency-aging-advisor.png",
-      video: "",
-    },
-    {
       title: "Verity - SBOM Validator and Risk Platform",
       href: "https://verity-thvb.onrender.com/login",
       dates: "2026",
@@ -264,12 +234,42 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Dependency Aging Advisor",
+      href: "https://github.com/shiwani42/dependency-aging-advisor",
+      dates: "2026",
+      active: true,
+      description:
+        "Most dependency scanners report how many packages are outdated without saying which ones matter. Dependency Aging Advisor scans your source to see where each dependency is used, combines that with OSV vulnerability data, and posts a prioritized weekly GitHub issue: what to fix this sprint, what to schedule next, and what is safe to ignore. Runs as a GitHub Action with no external services, supporting npm, PyPI, RubyGems, Go, Rust, Maven, PHP, and NuGet.",
+      technologies: [
+        "Python",
+        "GitHub Actions",
+        "OSV.dev",
+        "ripgrep",
+        "DevSecOps",
+        "Supply Chain Security",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/dependency-aging-advisor",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+        {
+          type: "LinkedIn",
+          href: "https://www.linkedin.com/posts/shiwani-mishra_built-a-tool-ive-been-wanting-for-a-while-activity-7446268445727449088-wiq2",
+          icon: <Icons.linkedin className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/dependency-aging-advisor.png",
+      video: "",
+    },
+    {
       title: "Toto - In-Store AI Concierge",
       href: "https://github.com/shiwani42/toto",
       dates: "2026",
       active: true,
       description:
-        "In-store AI concierge for a Swiss outdoor retailer. Shoppers open the app from a QR code, build a product list, navigate store zones, and use a camera AR overlay to highlight matching barcodes on the shelf. Includes trip planning with live weather, price decoding, repair-versus-replace guidance, and real-time multi-shopper sessions. Built as an install-free web app on top of zxing-wasm barcode scanning.",
+        "In-store AI concierge for an outdoor retailer. Shoppers open the app from a QR code, build a product list, navigate store zones, and use a camera AR overlay to highlight matching barcodes on the shelf. Includes trip planning with live weather, price decoding, repair-versus-replace guidance, and real-time multi-shopper sessions. Built as an install-free web app on top of zxing-wasm barcode scanning.",
       technologies: [
         "TypeScript",
         "zxing-wasm",
@@ -294,13 +294,12 @@ export const DATA = {
       dates: "2026",
       active: false,
       description:
-        "Candidate ranking system built for the Redrob Intelligent Candidate Discovery hackathon. Ranks 100,000 profiles against a job description using interpretable, JD-derived probes instead of embedding cosine similarity, with trust-weighted signals, confidence labels, pool calibration, and a diversity pass so shortlists are not dominated by one company.",
+        "Hiring tools usually rank people by keyword overlap with the job description, or by embedding cosine similarity. That rewards resumes stuffed with the same phrases, and it hides why someone landed at rank 3.\n\nMatrix reads the JD into named checks we can run on each profile: shipped vs researched, verified assessments vs claimed skills, consulting-only careers when the JD forbids them, reachability. High-trust signals weigh more than things anyone can type. We then rank 100,000 profiles with confidence labels, pool percentiles, and a diversity pass so the shortlist does not collapse into one company.",
       technologies: [
         "Python",
         "YAML",
         "Information Retrieval",
         "Learning to Rank",
-        "Hackathon",
       ],
       links: [
         {
