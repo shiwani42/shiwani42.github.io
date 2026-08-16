@@ -1,10 +1,22 @@
 import { Icons } from "@/components/icons";
-import { BookOpenIcon, HomeIcon, NotebookIcon } from "lucide-react";
+import {
+  Aperture,
+  BookOpenIcon,
+  Bot,
+  HomeIcon,
+  Lock,
+  NotebookIcon,
+  Shield,
+} from "lucide-react";
 import { Cplusplus } from "@/components/ui/svgs/cplusplus";
 import { Docker } from "@/components/ui/svgs/docker";
 import { EmbeddedSystems } from "@/components/ui/svgs/embeddedSystems";
-import { Typescript } from "@/components/ui/svgs/typescript";
+import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
+import { Postgresql } from "@/components/ui/svgs/postgresql";
 import { Python } from "@/components/ui/svgs/python";
+import { Pytorch } from "@/components/ui/svgs/pytorch";
+import { ReactDark } from "@/components/ui/svgs/reactDark";
+import { Typescript } from "@/components/ui/svgs/typescript";
 import { VerilogVhdl } from "@/components/ui/svgs/verilogVhdl";
 
 export const DATA = {
@@ -20,11 +32,19 @@ export const DATA = {
   avatarUrl: "/me.jpg",
   skills: [
     { name: "Python", icon: Python },
-    { name: "C/C++", icon: Cplusplus },
     { name: "TypeScript", icon: Typescript },
+    { name: "Next.js", icon: NextjsIconDark },
+    { name: "React", icon: ReactDark },
+    { name: "PostgreSQL", icon: Postgresql },
     { name: "Docker", icon: Docker },
+    { name: "PyTorch", icon: Pytorch },
+    { name: "Agentic AI", icon: Bot },
+    { name: "Cryptography", icon: Lock },
+    { name: "Cybersecurity", icon: Shield },
+    { name: "C/C++", icon: Cplusplus },
     { name: "Verilog/VHDL", icon: VerilogVhdl },
     { name: "Embedded Systems", icon: EmbeddedSystems },
+    { name: "Photonics", icon: Aperture },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
