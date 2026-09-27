@@ -197,6 +197,33 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Venture OS - Agentic Portfolio Intelligence",
+      href: "https://www.ventureos.xyz/",
+      dates: "2026",
+      active: true,
+      description:
+        "An agentic portfolio management and intelligence platform for VC firms. Sits on top of how a fund already works and turns scattered portfolio signals into clear, actionable oversight. Partners and ops teams can see how companies are doing across the book, catch issues early, prepare LP and board updates without the usual scramble, and keep investment, finance, and platform work aligned in one place.",
+      technologies: [
+        "Agentic AI",
+        "Portfolio Intelligence",
+        "VC Operations",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.ventureos.xyz/",
+          icon: <Icons.globe className="h-4 w-4" />,
+        },
+        {
+          type: "Demo",
+          href: "https://youtu.be/UqhBe5ZAf5M",
+          icon: <Icons.youtube className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/venture-os.jpg",
+      video: "",
+    },
+    {
       title: "Verity - SBOM Validator and Risk Platform",
       href: "https://verity-thvb.onrender.com/login",
       dates: "2026",
@@ -234,36 +261,6 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Dependency Aging Advisor",
-      href: "https://github.com/shiwani42/dependency-aging-advisor",
-      dates: "2026",
-      active: true,
-      description:
-        "Most dependency scanners report how many packages are outdated without saying which ones matter. Dependency Aging Advisor scans your source to see where each dependency is used, combines that with OSV vulnerability data, and posts a prioritized weekly GitHub issue: what to fix this sprint, what to schedule next, and what is safe to ignore. Runs as a GitHub Action with no external services, supporting npm, PyPI, RubyGems, Go, Rust, Maven, PHP, and NuGet.",
-      technologies: [
-        "Python",
-        "GitHub Actions",
-        "OSV.dev",
-        "ripgrep",
-        "DevSecOps",
-        "Supply Chain Security",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/shiwani42/dependency-aging-advisor",
-          icon: <Icons.github className="h-4 w-4" />,
-        },
-        {
-          type: "LinkedIn",
-          href: "https://www.linkedin.com/posts/shiwani-mishra_built-a-tool-ive-been-wanting-for-a-while-activity-7446268445727449088-wiq2",
-          icon: <Icons.linkedin className="h-4 w-4" />,
-        },
-      ],
-      image: "/project/daa-advisory-light.png",
-      video: "",
-    },
-    {
       title: "Toto - In-Store AI Concierge",
       href: "https://github.com/shiwani42/toto",
       dates: "2026",
@@ -296,6 +293,36 @@ export const DATA = {
         },
       ],
       image: "/project/toto.gif",
+      video: "",
+    },
+    {
+      title: "Dependency Aging Advisor",
+      href: "https://github.com/shiwani42/dependency-aging-advisor",
+      dates: "2026",
+      active: true,
+      description:
+        "Most dependency scanners report how many packages are outdated without saying which ones matter. Dependency Aging Advisor scans your source to see where each dependency is used, combines that with OSV vulnerability data, and posts a prioritized weekly GitHub issue: what to fix this sprint, what to schedule next, and what is safe to ignore. Runs as a GitHub Action with no external services, supporting npm, PyPI, RubyGems, Go, Rust, Maven, PHP, and NuGet.",
+      technologies: [
+        "Python",
+        "GitHub Actions",
+        "OSV.dev",
+        "ripgrep",
+        "DevSecOps",
+        "Supply Chain Security",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/dependency-aging-advisor",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+        {
+          type: "LinkedIn",
+          href: "https://www.linkedin.com/posts/shiwani-mishra_built-a-tool-ive-been-wanting-for-a-while-activity-7446268445727449088-wiq2",
+          icon: <Icons.linkedin className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/daa-advisory-light.png",
       video: "",
     },
     {
