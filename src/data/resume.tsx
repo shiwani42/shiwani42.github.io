@@ -170,21 +170,20 @@ export const DATA = {
 
   projects: [
     {
-      title: "Goodman - Agentic Privacy Operations Platform",
+      title: "Goodman - Runtime Security Sensor",
       href: "https://www.heisenbug.ai/",
       dates: "December 2025 - Present",
       active: true,
       description:
-        "Heisenbug's flagship product. An agentic privacy operations platform that continuously monitors, enforces, and responds to data protection obligations across an organization's entire data infrastructure, built ground-up for India's DPDP Act with agentic AI at the core.",
+        "Goodman is a runtime security sensor to help AppSec engineers at software companies detect when a trusted dependency starts acting maliciously using behavioral fingerprints built from what code actually does at the kernel level, not what a database says it should do.",
       technologies: [
+        "Runtime Security",
+        "Behavioral Fingerprints",
+        "AppSec",
+        "Supply Chain Security",
+        "Linux Kernel",
         "Python",
-        "FastAPI",
-        "PostgreSQL",
         "Docker",
-        "Agentic AI",
-        "DPDP Compliance",
-        "Next.js",
-        "TypeScript",
       ],
       links: [
         {
