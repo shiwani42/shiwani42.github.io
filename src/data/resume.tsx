@@ -220,7 +220,7 @@ export const DATA = {
           icon: <Icons.youtube className="h-4 w-4" />,
         },
       ],
-      image: "/project/venture-os.jpg",
+      image: "/project/venture-os.gif",
       video: "",
     },
     {
