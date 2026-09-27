@@ -295,6 +295,43 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Urban Planning Copilot",
+      href: "https://urban-planning-copilot.heisenbug.in/",
+      dates: "2026",
+      active: true,
+      description:
+        "Map-first AI-native urban planning workspace where human planners and an AI collaborator share one domain state: objectives, constraints, spatial analysis, scenarios, evidence, decisions, and reports. Agents use browser WebMCP semantic tools on the same live app (not DOM scraping), so UI actions and agent tools both mutate the same server-authoritative planning state.",
+      technologies: [
+        "WebMCP",
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Leaflet",
+        "Turf.js",
+        "Tailwind CSS",
+        "PostgreSQL",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://urban-planning-copilot.heisenbug.in/",
+          icon: <Icons.globe className="h-4 w-4" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/shiwani42/urban-planning-copilot",
+          icon: <Icons.github className="h-4 w-4" />,
+        },
+        {
+          type: "Demo",
+          href: "https://vimeo.com/1223729316",
+          icon: <Icons.youtube className="h-4 w-4" />,
+        },
+      ],
+      image: "/project/urban-planning-copilot.gif",
+      video: "",
+    },
+    {
       title: "Dependency Aging Advisor",
       href: "https://github.com/shiwani42/dependency-aging-advisor",
       dates: "2026",
